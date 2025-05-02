@@ -40,7 +40,6 @@ header {
     padding: 1.5% 5%;
     background: #ddd; /* Button background */
     border-radius: 50% / 200%;
-    min-width: 15%;
     color: #333;
     border: 0;
 }
@@ -49,6 +48,7 @@ header {
     color: white;
     font-weight: bold;
     transition: background-color 0.5s ease; /* Smooth background transition */
+    transform: scale(1.05);
 }
 
 /* ================= */
@@ -69,19 +69,25 @@ header {
 /* ================ */
 
 .car {
-    background: #444; /* Card background */
-    width: 30%; /* Card width */
-    padding: 1%; /* Inner spacing */
-    margin-bottom: 1%; /* Bottom margin */
-    border-radius: 7.5%; /* Rounded corners */
-    color: white;
+
     font-size: 50%; /* Base font size */
+    justify-content: space-between; /* Space distribution */
+
+    /* Layout */
+    width: 30%; /* Reduced from 30% for better fit */
+    padding: 1%;
+    margin-bottom: 1%;
+    
+    /* Visual styling */
+    background: #444;
+    border-radius: 7.5%;
+    color: white;
+    
+    /* Content alignment */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Horizontal centering */
-    text-align: center; /* Text alignment */
-    justify-content: space-between; /* Space distribution */
-    min-height: 20%; /* Added for consistency */
+    align-items: center;
+    text-align: center;
 }
 
 /* Card image */
@@ -111,13 +117,18 @@ header {
     width: 100%; /* Full width */
 }
 
-/* ============= */
-/* HOVER EFFECTS */
-/* ============= */
+.car a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
 
+/* Card hover effect*/
 .car:hover {
     background: #3b3b3b; /* Darker background on hover */
     transition: background-color 0.5s ease; /* Smooth background transition */
+    transform: scale(1.02);
 }
 .car img:hover {
     background: #686868; /* Lighter background on hover */
