@@ -1,73 +1,125 @@
-/* RESET & BASE */
+/* ===================== */
+/* BASE & RESET STYLES */
+/* ===================== */
+
+/* Reset default margins/paddings and base styles */
 body, h1, h2, h3, p, ul {
     margin: 0%;
     padding: 0%;
 }
 body {
     font-family: Arial, sans-serif; 
-    line-height: 1.4; 
+}
+a {
+    text-decoration: none;
+    color: white; /* Default link color */
 }
 
-/* HEADER */
+/* ============== */
+/* HEADER STYLES */
+/* ============== */
+
 header { 
-    background: #1a2b5a; 
+    background: #4166F5; /* Ultramarine background */
     color: white; 
-    padding: 1%;
+    padding: 2%;
 }
 
-/* VEHICLE CATEGORIES */
+/* ==================== */
+/* CATEGORIES NAVIGATION */ 
+/* ==================== */
+
 .categories {
     display: flex;
     justify-content: center;
-    gap: 2%;
+    gap: 2%; /* Space between items */
     padding: 2%;
-    background: #f5f5f5;
+    background: #f5f5f5; /* Light background */
 }
-.categories a {
-    padding: 1% 2%;
-    background: #ddd;
-    border-radius: 20px;
-    text-decoration: none;
+.categories button {
+    padding: 1.5% 5%;
+    background: #ddd; /* Button background */
+    border-radius: 50% / 200%;
+    min-width: 15%;
     color: #333;
+    border: 0;
+}
+.categories button:hover {
+    background: #4166F5;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.5s ease; /* Smooth background transition */
 }
 
-/* CARS CARDS */
+/* ================= */
+/* VEHICLE CARDS GRID */
+/* ================= */
+
 .cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 1%;
     padding: 1%;
-    background: #222;
-    flex-wrap: wrap;
+    background: #222; /* Dark background */
+    justify-content: center; /* Center cards */
 }
+
+/* ================ */
+/* INDIVIDUAL CARD */
+/* ================ */
+
 .car {
-    background: #444;
-    border-radius: 5%;
-    padding: 1%;
-    width: 30%;
+    background: #444; /* Card background */
+    width: 30%; /* Card width */
+    padding: 1%; /* Inner spacing */
+    margin-bottom: 1%; /* Bottom margin */
+    border-radius: 7.5%; /* Rounded corners */
     color: white;
-    font-size: 50%;
+    font-size: 50%; /* Base font size */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 1%;  
+    align-items: center; /* Horizontal centering */
+    text-align: center; /* Text alignment */
+    justify-content: space-between; /* Space distribution */
+    min-height: 20%; /* Added for consistency */
 }
+
+/* Card image */
 .car img {
-    width: 80%;
-    background: #555;
-    margin: 3% 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5%;
+    width: 80%; /* Image width */
+    max-width: 100%;
+    background: #555; /* Image placeholder */
+    margin: 2% auto; /* Auto margins */
+    border-radius: 5%; /* Rounded corners */
+    object-fit: contain; /* Maintain proportions */
+    aspect-ratio: 16/9; /* Aspect ratio */
+    display: block;
+    height: auto;
 }
+
+/* Card title */
 .car h3 {
-    font-size: 200%;
-    margin: 1% 0;
-    width: 100%;
+    font-size: 200%; /* Larger font */
+    margin: 2% 0; /* Vertical margins */
+    width: 100%; /* Full width */
 }
+
+/* Card text */
 .car p {
-    font-size: 200%;
-    margin: 0.5% 0;
-    width: 100%;
+    font-size: 200%; /* Larger font */
+    margin: 2% 0; /* Vertical margins */
+    width: 100%; /* Full width */
+}
+
+/* ============= */
+/* HOVER EFFECTS */
+/* ============= */
+
+.car:hover {
+    background: #3b3b3b; /* Darker background on hover */
+    transition: background-color 0.5s ease; /* Smooth background transition */
+}
+.car img:hover {
+    background: #686868; /* Lighter background on hover */
+    transition: background-color 0.5s ease; /* Smooth background transition */
 }
