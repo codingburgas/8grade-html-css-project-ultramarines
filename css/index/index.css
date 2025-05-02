@@ -128,6 +128,7 @@ header {
 .car:hover {
     background: #3b3b3b; /* Darker background on hover */
     transition: background-color 0.5s ease; /* Smooth background transition */
+    color: #4166F5; /* Darker text on hover */
     transform: scale(1.02);
 }
 .car img:hover {
