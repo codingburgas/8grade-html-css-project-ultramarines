@@ -5,21 +5,56 @@
     <link rel="stylesheet" href="css/index/index.css">
 </head>
 <body>
-    <!-- Header with logo and nav -->
+    <!-- Header with logo -->
     <header>
         <h1>UltraCar</h1>
     </header>
     
-    <!-- Vehicle type selector -->
+    <!-- Navigation with dropdown categories -->
     <section class="categories">
-        <button href="#">Luxury</button>
-        <button href="#">Sports</button>
-        <button href="#">Vans</button>
-        <button href="#">Motorcycles</button>
+        <!-- Luxury vehicles dropdown menu -->
+        <div class="dropdown">
+            <button>Luxury</button>
+            <ul>
+                <li><a href="html/categories/luxury/mercedes.html">Mercedes</a></li>
+                <li><a href="html/categories/luxury/BMW.html">BMW</a></li>
+                <li><a href="html/categories/luxury/audi.html">Audi</a></li>
+            </ul>
+        </div>
+
+        <!-- Sports cars dropdown menu -->
+        <div class="dropdown">
+            <button>Sports</button>
+            <ul>
+                <li><a href="html/categories/sports/porsche.html">Porsche</a></li>
+                <li><a href="html/categories/sports/ferrari.html">Ferrari</a></li>
+                <li><a href="html/categories/sports/lamborghini.html">Lamborghini</a></li>
+            </ul>
+        </div>
+
+        <!-- Vans dropdown menu -->
+        <div class="dropdown">
+            <button>Vans</button>
+            <ul>
+                <li><a href="html/categories/vans/mercedes.html">Mercedes</a></li>
+                <li><a href="html/categories/vans/volkswagen.html">Volkswagen</a></li>
+                <li><a href="html/categories/vans/ford.html">Ford</a></li>
+            </ul>
+        </div>
+
+        <!-- Motorcycles dropdown menu -->
+        <div class="dropdown">
+            <button>Motorcycles</button>
+            <ul>
+                <li><a href="html/categories/motorcycles/harley.html">Harley</a></li>
+                <li><a href="html/categories/motorcycles/bmw.html">BMW</a></li>
+                <li><a href="html/categories/motorcycles/honda.html">Ducati</a></li>
+            </ul>
+        </div>
     </section>
     
     <!-- Car listings -->
-    <div class="cards">
+    <section class="cards">
             <div class="car">
                 <a href="html/index/car1.html">
                     <img src="media/index/car1.png">
@@ -95,7 +130,7 @@
                 <p><strong>€38.46 / day</strong></p>
             </a>
         </div>
-    </div>
+    </section>
     
     <footer>
         
