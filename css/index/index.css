@@ -29,69 +29,26 @@ header {
 /* CATEGORIES NAVIGATION */ 
 /* ==================== */
 
-/* Categories container styling */
 .categories {
-    display: flex; /* Use flexbox layout */
-    justify-content: center; /* Center items horizontally */
-    gap: 1%; /* Space between dropdown elements */
-    padding: 1.5%; /* Internal spacing */
-    background: #333;
+    display: flex;
+    justify-content: center;
+    gap: 2%; /* Space between items */
+    padding: 2%;
+    background: #f5f5f5; /* Light background */
 }
-
-/* Dropdown container styling */
-.dropdown {
-    position: relative; /* Enable absolute positioning */
-    width: 20%; 
+.categories button {
+    padding: 1.5% 5%;
+    background: #ddd; /* Button background */
+    border-radius: 50% / 200%;
+    color: #333;
+    border: 0;
 }
-
-/* Dropdown button styling */
-.dropdown button {
-    background: #4166F5; 
-    color: white; 
-    border: none; /* Remove default border */
-    padding: 3% 0; /* Vertical padding only */
-    font-size: 120%; /* Larger font */
-    width: 100%; /* Full width of container */
-    border-radius: 20% / 100%; /* Rounded corners */
-}
-
-/* Dropdown button hover state */
-.dropdown button:hover {
-    background: #3a5bd9;
-}
-
-/* Dropdown menu list styling */
-.dropdown ul {
-    display: none; /* Hide by default */
-    position: absolute; /* Position relative to parent */
-    top: 100%;
-    background: #444;
-    width: 100%; /* Same width as button */
-    text-align: center; /* Center menu items */
-}
-
-/* Show dropdown menu on hover */
-.dropdown:hover ul {
-    display: block; /* Show menu when button is hovered */
-}
-
-/* Dropdown list items styling */
-.dropdown li {
-    list-style: none; /* Remove bullet points */
-}
-
-/* Dropdown menu links styling */
-.dropdown a {
-    display: block; /* Make links fill container */
-    padding: 5% 5%; /* Padding around text */
+.categories button:hover {
+    background: #4166F5;
     color: white;
-    font-size: 110%; /* Larger font */
-}
-
-/* Dropdown menu links hover state */
-.dropdown a:hover {
-    background: #3a58cd;
-    color: rgb(228, 228, 228);
+    font-weight: bold;
+    transition: background-color 0.5s ease; /* Smooth background transition */
+    transform: scale(1.05);
 }
 
 /* ================= */
