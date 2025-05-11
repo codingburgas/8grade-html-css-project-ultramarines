@@ -1,0 +1,101 @@
+/* Global reset - removes default browser margins/padding and sets border-box sizing */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; /* Includes padding/border in element width calculations */
+}
+
+/* Base page styles - sets font, background, and flex layout for sticky footer */
+body {
+    font-family: Arial, sans-serif; /* Clean, readable sans-serif font */
+    background-color: #f5f5f5; /* Light gray page background */
+    min-height: 100%; /* Full viewport height minimum */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Vertical stacking for flex items */
+    font-size: 100%; /* Base font size */
+}
+
+/* Header section - contains logo and navigation */
+header {
+    background-color: #1a237e; /* Dark blue brand color */
+    color: white; /* High contrast text */
+    padding: 1%; /* Internal spacing */
+    display: flex; /* Flex layout for horizontal alignment */
+    align-items: center; /* Vertically centers children */
+    gap: 2%; /* Space between flex items */
+}
+
+/* Logo container and image styling */
+.logo a, img {
+    max-width: 27%; /* Limits logo size to 27% of container */
+    margin-left: 4%; /* Left margin for proper positioning */
+}
+
+/* Company name/heading in header */
+.logo-text {
+    font-size: 150%; /* 1.5× base font size */
+    font-weight: bold; /* Makes text stand out */
+    margin-right: 45%; /* Creates space for navigation items */
+}
+
+/* Main content area - grows to fill available space */
+main {
+    flex: 1; /* Allows content to expand and push footer down */
+    width: 90%; 
+    margin: 2.5% auto; /* Centered with vertical spacing */
+    padding: 2.5%; /* Internal padding */
+    line-height: 160%; /* Improved text readability */
+}
+
+/* Content section spacing */
+section {
+    margin-bottom: 3%; /* Space between sections */
+}
+
+/* Section heading style */
+h2 {
+    color: #1a237e; 
+    border-bottom: 0.125% solid #1a237e; /* Decorative underline */
+    padding-bottom: 1.5%; /* Space between text and underline */
+    font-size: 150%; /* 1.5× base font size */
+    margin-top: 3%; /* Space above heading */
+}
+
+/* Features grid layout - responsive columns */
+.features {
+    display: grid; /* CSS Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(30%, 100%)); /* Responsive columns */
+    gap: 2%; /* Space between grid items */
+    margin: 3% 0%; /* Vertical margins */
+}
+
+/* Individual feature card styling */
+article {
+    background: #f8f9fa; /* Light background for cards */
+    padding: 5%; /* Internal spacing */
+}
+
+/* Feature title styling */
+h3 {
+    font-size: 120%; /* 1.2× base font size */
+    margin-bottom: 3%; /* Space below title */
+}
+
+/* Unordered list formatting */
+ul {
+    padding-left: 5%; /* Proper list indentation */
+}
+
+/* List item spacing */
+li {
+    margin-bottom: 2%; /* Space between list items */
+}
+
+/* Footer styling - matches header */
+footer {
+    background-color: #1a237e; /* Brand color */
+    color: white; /* High contrast text */
+    text-align: center; /* Centered content */
+    padding: 1.5%; /* Internal spacing */
+    font-size: 110%; /* Slightly larger text */
+}

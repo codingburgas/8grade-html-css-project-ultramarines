@@ -1,0 +1,211 @@
+/* ===================== */
+/* BASE & RESET STYLES */
+/* ===================== */
+
+/* Reset default browser margins/paddings for common elements */
+body, h1, h2, h3, p, ul {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Base body typography */
+body {
+    font-family: Arial, sans-serif; /* System font stack for better performance */
+}
+
+/* Link styling defaults */
+a {
+    text-decoration: none; /* Remove underlines */
+    color: white; /* Default link color */
+}
+
+/* ============== */
+/* HEADER STYLES */
+/* ============== */
+
+/* Main header container */
+header {
+    background-color: #1a237e;   /* Dark blue brand color */
+    color: white;                /* Text color */
+    display: flex;               /* Flex layout for horizontal alignment */
+    align-items: center;         /* Vertical centering */
+    height: 10%;                
+    padding: 0 2.5%;             
+}
+
+
+/* Logo image styling */
+.logo a, img {
+    max-width: 27%;            /* Responsive logo sizing — оставлено без изменений */
+    margin-left: 4%;           /* Left margin */
+    height: 10%;               /* Approximate % of a typical header height */
+    margin-right: 3%;         
+}
+
+
+/* Main site title */
+.logo-text {
+    font-size: 250%; /* Large, prominent text */
+    font-weight: bold; /* Bold weight for emphasis */
+    color: white; /* Maintains contrast */
+    margin-right: auto; /* Pushes other items to the right */
+    margin: 2%; /* Balanced spacing */
+    margin-right: 45%; /* Creates space for navigation */
+}
+
+/* Header h1 styling */
+header h1 {
+    margin-right: auto; /* Keeps title aligned with logo */
+    font-size: 200%; /* Readable heading size */
+}
+
+/* About Us button styling */
+.aboutusbutton {
+    background-color: white; /* Contrasting background */
+    color: #1a237e; /* Brand color text */
+    font-size: 110%; /* Slightly larger than body text */
+    padding: 1.5%; /* Comfortable click area */
+    margin: 2%; /* Balanced spacing */
+    margin-left: 20%; /* Right-shifted positioning */
+    width: 10%; /* Narrow width */
+    border-radius: 50% / 200%; /* Pill-shaped button */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Allows width control */
+}
+
+/* About Us button hover state */
+.aboutusbutton:hover {
+    background-color: #1a237e; /* Brand color background */
+    color: white; /* Light text for contrast */
+    font-weight: bold; /* Emphasized text */
+}
+
+/* ==================== */
+/* CATEGORIES NAVIGATION */ 
+/* ==================== */
+
+/* Categories navigation container */
+.categories {
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Centered items */
+    gap: 2%; /* Space between items */
+    padding: 2%; /* Internal spacing */
+    background: #f5f5f5; /* Light background */
+}
+
+/* Category buttons */
+.categories button {
+    padding: 1.5% 5%; /* Comfortable click area */
+    background: #ddd; /* Neutral background */
+    border-radius: 50% / 200%; /* Pill-shaped buttons */
+    color: #333; /* Dark text */
+    border: 0; /* No border */
+}
+
+/* Category button hover state */
+.categories button:hover {
+    background: #4166F5; /* Brand blue */
+    color: white; /* Light text */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.5s ease; /* Smooth color change */
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+/* ================= */
+/* VEHICLE CARDS GRID */
+/* ================= */
+
+/* Cards container */
+.cards {
+    display: flex; /* Flex layout */
+    flex-wrap: wrap; /* Multi-line wrapping */
+    gap: 1%; /* Space between cards */
+    padding: 1%; /* Internal spacing */
+    background: #222; /* Dark background */
+    justify-content: center; /* Centered cards */
+}
+
+/* ================ */
+/* INDIVIDUAL CARD */
+/* ================ */
+
+/* Vehicle card styling */
+.car {
+    font-size: 50%; /* Base font size */
+    justify-content: space-between; /* Space distribution */
+    width: 30%; /* Responsive width */
+    padding: 1%; /* Internal spacing */
+    margin-bottom: 1%; /* Bottom margin */
+    background: #444; /* Card background */
+    border-radius: 7.5%; /* Rounded corners */
+    color: white; /* Text color */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Stacked content */
+    align-items: center; /* Centered items */
+    text-align: center; /* Centered text */
+}
+
+/* Card image styling */
+.car img {
+    width: 80%; /* Responsive width */
+    max-width: 100%; /* Prevent overflow */
+    background: #555; /* Placeholder color */
+    margin: 2% auto; /* Centered with spacing */
+    border-radius: 5%; /* Rounded corners */
+    object-fit: contain; /* Maintain proportions */
+    aspect-ratio: 16/9; /* Standard widescreen ratio */
+    display: block; /* Block display */
+    height: auto; /* Auto height */
+}
+
+/* Card title */
+.car h3 {
+    font-size: 200%; /* Larger text */
+    margin: 2% 0; /* Vertical spacing */
+    width: 100%; /* Full width */
+}
+
+/* Card description */
+.car p {
+    font-size: 200%; /* Larger text */
+    margin: 2% 0; /* Vertical spacing */
+    width: 100%; /* Full width */
+}
+
+/* Card link */
+.car a {
+    display: block; /* Block-level link */
+    width: 100%; /* Full width */
+    text-decoration: none; /* No underline */
+    color: inherit; /* Inherits text color */
+}
+
+/* Card hover effects */
+.car:hover {
+    background: #3b3b3b; /* Darker background */
+    transition: background-color 0.5s ease; /* Smooth transition */
+    color: #4166F5; /* Accent text color */
+    transform: scale(1.02); /* Slight zoom */
+}
+
+/* Card image hover */
+.car img:hover {
+    background: #686868; /* Lighter background */
+    transition: background-color 0.5s ease; /* Smooth transition */
+}
+
+/* ============== */
+/* FOOTER STYLES */
+/* ============== */
+
+/* Page footer */
+footer {
+    background-color: #1a237e; /* Matches header */
+    color: white; /* Text color */
+    text-align: center; /* Centered content */
+    padding: 1.5%; /* Internal spacing */
+    height: 6%; /* Fixed height */
+    width: 100%; /* Full width */
+    font-size: 110%; /* Slightly larger text */
+}
