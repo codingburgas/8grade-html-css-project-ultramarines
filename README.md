@@ -28,5 +28,5 @@
 ---
 
 ## 📂 **Documentation**  
-- 📄 [Documentation](docs/documentation.docx)  
+- 📄 [Documentation](documentation/documentation.docx)  
 - 📊 [Presentation](documentation/presentation.pptx)
