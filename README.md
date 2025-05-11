@@ -22,11 +22,6 @@
 
 ---
 
-## 🖼️ **Screenshots**  
-![Homepage](media/screenshot1)  
-
----
-
 ## 📂 **Documentation**  
 - 📄 [Documentation](documentation/documentation.docx)  
 - 📊 [Presentation](documentation/presentation.pptx)
