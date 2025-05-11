@@ -29,7 +29,7 @@
   <img src="https://img.icons8.com/fluency/48/000000/microsoft-teams-2019.png" alt="Teams" title="Teams" width="48" height="48">
   <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML5" title="HTML5" width="48" height="48">
   <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3" title="CSS3" width="48" height="48">
-  <img src="https://img.icons8.com/fluency/48/000000/krita.png" alt="Krita" title="Krita" width="48" height="48">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Calligrakrita-base.svg/330px-Calligrakrita-base.svg.png" alt="Krita" title="Krita" width="48" height="48">
   <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" title="Git" width="48" height="48">
 </p>
 
