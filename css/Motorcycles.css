@@ -33,7 +33,7 @@ header {
 
 /* Logo container and image styling */
 .logo a, img {
-    max-width: 100%; /* Limits logo size to 100% of container */
+    max-width: 30%; /* Limits logo size to 27% of container */
     margin-left: 4%; /* Left margin for proper positioning */
 }
 

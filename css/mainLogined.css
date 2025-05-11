@@ -53,7 +53,7 @@ header {
 
 /* Logo image styles */
 .logo a, img {
-    max-width: 27%;
+    max-width: 100%;
     margin-left: 4%; /* Reduced right margin */
 }
 
@@ -74,26 +74,26 @@ header {
 /* Categories navigation bar */
 .categories {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center items horizontally */
     gap: 2%; /* Space between items */
     padding: 2%;
     background: #f5f5f5; /* Light background */
 }
-/* Category button styles */
-.categories button {
+/* Category button styling */
+.categories .button {
     padding: 1.5% 5%;
     background: #ddd; /* Button background */
-    border-radius: 50% / 200%; /* Elliptical shape */
+    border-radius: 50% / 200%; /* Oval-shaped corners */
     color: #333;
     border: 0;
 }
-/* Category button hover effect */
-.categories button:hover {
+/* Category button hover effects */
+.categories .button:hover {
     background: #4166F5;
     color: white;
     font-weight: bold;
     transition: background-color 0.5s ease; /* Smooth background transition */
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight scale effect */
 }
 
 /* ================= */

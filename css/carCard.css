@@ -20,26 +20,11 @@ body {
 /* HEADER STYLES */
 /* ============== */
 
-/* Main header styling with background and spacing */
+/* Main header appearance */
 header {
-    background-color: #1a237e; /* Primary brand color (dark blue) */
-    color: white; /* Contrast text color */
-    padding: 0%; /* No internal padding */
-    display: flex; /* Flex layout for horizontal alignment */
-    align-items: center; /* Vertically centers all header content */
-    height: 10%; /* Fixed header height relative to viewport */
-}
-
-/* ===== FOOTER SECTION ===== */
-/* Page footer with copyright/info */
-footer {
-    background-color: #1a237e; /* Matches header branding */
-    color: white; /* Contrast text */
-    text-align: center; /* Centered content */
-    width: 100%; /* Full viewport width */
-    font-size: 110%; /* Text size */
-    padding: 1.5% 0; /* Vertical padding */
-    position: relative; /* For potential absolute positioning */
+    background: #4166F5; /* Brand blue color */
+    padding: 2%; /* Inner spacing */
+    margin-bottom: 3%; /* Bottom spacing */
 }
 
 /* ================= */
@@ -148,4 +133,3 @@ input {
     margin-top: 1%; /* Top spacing */
     margin-bottom: 1%; /* Bottom spacing */
 }
-
