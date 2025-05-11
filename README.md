@@ -23,7 +23,7 @@
 ---
 
 ## 🖼️ **Screenshots**  
-![Homepage](media/readmeMedia/screenshot1)  
+![Homepage](media/readmeMedia/screenshot1.png)  
 
 ---
 
