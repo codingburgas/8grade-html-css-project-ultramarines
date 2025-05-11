@@ -1,4 +1,8 @@
-/* Global reset for consistent styling */
+/* ===================== */
+/* GLOBAL RESET & BASE */
+/* ===================== */
+
+/* Global box model reset for consistent sizing */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,56 +10,74 @@
     font-family: Arial;
 }
 
-/* Dark background for entire page */
+/* Base page styling with dark theme */
 body {
-    background: #111;
-    color: white;
-    padding: 2%;
+    background: #111; /* Deep black background */
+    color: white; /* Default text color */
+    padding: 2%; /* Page padding */
 }
 
+/* ================= */
+/* FORM CONTAINER */
+/* ================= */
+
+/* Main form layout using flexbox */
 form {
     display: flex;
-    flex-wrap: wrap;
-    gap: 3%;
-    width: 98%;
+    flex-wrap: wrap; /* Allow columns to wrap */
+    gap: 3%; /* Space between columns */
+    width: 98%; /* Slightly less than full width */
 }
 
-/* Each form column styling */
+/* ==================== */
+/* FORM COLUMN STYLING */
+/* ==================== */
+
+/* Individual form column styling */
 section {
-    flex: 1;
+    flex: 1; /* Equal width columns */
 }
 
-/* Form label styling */
+/* ================= */
+/* FORM ELEMENTS */
+/* ================= */
+
+/* Label styling for form fields */
 label {
-    display: block;
-    margin-bottom: 1%;
-    color: #aaa;
+    display: block; /* Ensure labels stack vertically */
+    margin-bottom: 1%; /* Spacing below labels */
+    color: #aaa; /* Light gray text */
 }
 
-/* Input field styling */
+/* Input and select field styling */
 input, select {
-    width: 100%;
-    padding: 1.5%;
-    border: 0;
-    background: #333;
-    color: white;
-    margin-bottom: 3%;
+    width: 100%; /* Full width fields */
+    padding: 1.5%; /* Comfortable padding */
+    border: 0; /* Remove default borders */
+    background: #333; /* Dark input background */
+    color: white; /* Text color */
+    margin-bottom: 3%; /* Bottom spacing */
 }
 
-/* Green payment button */
+/* ================= */
+/* SUBMIT BUTTON */
+/* ================= */
+
+/* Primary action button styling */
 button {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    padding: 2%;
-    width: 100%;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 3%;
+    background: #4CAF50; /* Green color for actions */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    padding: 2%; /* Vertical padding */
+    width: 100%; /* Full width */
+    font-weight: bold; /* Emphasized text */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 3%; /* Top spacing */
 }
 
+/* Button hover state */
 button:hover {
-    background: #327335;
-    color: rgb(222, 222, 222);
-    transition: background-color 0.5s ease; /* Smooth background transition */
+    background: #327335; /* Darker green */
+    color: rgb(222, 222, 222); /* Slightly gray text */
+    transition: background-color 0.5s ease; /* Smooth transition */
 }

@@ -1,105 +1,135 @@
-/* Reset and base styles for all elements */
+/* ===================== */
+/* GLOBAL RESET & BASE */
+/* ===================== */
+
+/* Universal reset for all elements */
 * {
     margin: 0;
     padding: 0;
     font-family: Arial;
 }
 
-/* Body background and text colors */
+/* Base body styling */
 body {
-    background: #111;
-    color: white;
-    padding: 2%;
+    background: #111; /* Dark background */
+    color: white; /* Default text color */
+    padding: 2%; /* Overall page padding */
 }
 
-/* Header styling */
+/* ============== */
+/* HEADER STYLES */
+/* ============== */
+
+/* Main header appearance */
 header {
-    background: #4166F5;
-    padding: 2%;
-    margin-bottom: 3%;
+    background: #4166F5; /* Brand blue color */
+    padding: 2%; /* Inner spacing */
+    margin-bottom: 3%; /* Bottom spacing */
 }
 
-/* Main content section layout */
+/* ================= */
+/* MAIN CONTENT AREA */
+/* ================= */
+
+/* Section layout container */
 section {
-    display: flex;
-    background: #222;
-    padding: 2%;
-    margin-bottom: 3%;
+    display: flex; /* Flexbox layout */
+    background: #222; /* Dark gray background */
+    padding: 2%; /* Inner spacing */
+    margin-bottom: 3%; /* Bottom spacing */
 }
 
-/* Car image sizing */
+/* Vehicle image styling */
 img {
-    width: 45%;
-    height: auto;
-    margin-right: 3%;
+    width: 45%; /* Relative width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 3%; /* Right spacing */
 }
 
-/* Article container for car details */
+/* ==================== */
+/* VEHICLE DETAILS AREA */
+/* ==================== */
+
+/* Content container for vehicle details */
 article {
-    width: 55%;
+    width: 55%; /* Complementary width to image */
 }
 
-/* Car model title styling */
+/* Vehicle model title */
 h2 {
-    color: #4166F5;
-    margin-bottom: 3%;
-    font-size: 180%;
+    color: #4166F5; /* Brand blue color */
+    margin-bottom: 3%; /* Bottom spacing */
+    font-size: 180%; /* Larger font size */
 }
 
-/* Electric badge styling */
+/* Electric vehicle badge */
 span {
-    background: #4CAF50;
-    color: white;
-    padding: 0.5% 2%;
-    border-radius: 2%;
-    font-size: 70%;
+    background: #4CAF50; /* Green color for EV badge */
+    color: white; /* Text color */
+    padding: 0.5% 2%; /* Inner spacing */
+    border-radius: 2%; /* Slightly rounded corners */
+    font-size: 70%; /* Smaller font size */
 }
 
-/* Remove default list styling */
+/* ===================== */
+/* SPECIFICATIONS LIST */
+/* ===================== */
+
+/* Reset default list styling */
 ul {
     list-style: none;
 }
 
-/* Specification list items */
+/* Individual specification item */
 li {
-    margin-bottom: 2%;
-    display: flex;
+    margin-bottom: 2%; /* Bottom spacing */
+    display: flex; /* Flex layout for label-value pairs */
 }
 
-/* Label text in specifications */
+/* Specification label styling */
 strong {
-    color: #aaa;
-    width: 30%;
+    color: #aaa; /* Light gray color */
+    width: 30%; /* Fixed width for alignment */
 }
 
+/* ============== */
+/* ACTION BUTTON */
+/* ============== */
+
+/* Primary button styling */
 .button {
     display: inline-block;
-    background: #4166F5;
-    color: white;
-    text-decoration: none;
-    width: 96%;
-    padding: 2%;
-    font-weight: bold;
+    background: #4166F5; /* Brand blue color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    width: 96%; /* Nearly full width */
+    padding: 2%; /* Inner spacing */
+    font-weight: bold; /* Bold text */
 }
 
-/* Button hover effect */
+/* Button hover state */
 .button:hover {
-    background: #3a5bd9;
+    background: #3a5bd9; /* Slightly darker blue */
 }
 
+/* ================= */
 /* BOOKING FORM */
+/* ================= */
+
+/* Form container styling */
 form {
-    background: #222;
-    padding: 3%;
-    margin-bottom: 3%;
+    background: #222; /* Dark gray background */
+    padding: 3%; /* Inner spacing */
+    margin-bottom: 3%; /* Bottom spacing */
 }
 
+/* Form input fields */
 input {
-    width: 100%;
-    padding: 1%;
-    background: #333;
-    border: none;
-    color: white;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    width: 100%; /* Full width */
+    padding: 1%; /* Inner spacing */
+    background: #333; /* Dark background */
+    border: none; /* Remove default border */
+    color: white; /* Text color */
+    margin-top: 1%; /* Top spacing */
+    margin-bottom: 1%; /* Bottom spacing */
 }

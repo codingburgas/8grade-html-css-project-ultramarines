@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Payment page title -->
     <title>UltraCar Payment</title>
+    <!-- Payment form styling -->
     <link rel="stylesheet" href="../../css/paymentPage.css">
 </head>
 <body>
+    <!-- Page header with logo -->
     <header>
         <h1>UltraCar</h1>
     </header>
-        <!-- Payment form -->
+    
+    <!-- Main payment container -->
+    <main>
+        <!-- Payment information form -->
         <form>
-            <!-- Left column - payment details -->
+            <!-- Payment details section -->
             <section>
-
+                <!-- Section heading -->
                 <h3>Payment Details</h3>
                 
+                <!-- Card number input -->
                 <label>Card Number</label>
                 <input type="number" placeholder="4242 4242 4242 4242" required>
                 
+                <!-- Cardholder name input -->
                 <label>Cardholder Name</label>
                 <input type="text" placeholder="Name on card" required>
 
+                <!-- Expiration date input -->
                 <label>Expiry Date</label>
                 <input type="text" placeholder="MM/YY" required>
 
+                <!-- Security code input -->
                 <label>CVV</label>
                 <input type="number" placeholder="123" required>
-
             </section>
-            <!-- Submit button -->
+            
+            <!-- Payment submission button -->
             <button type="submit">PAY €242.42 NOW</button>
         </form>
     </main>

@@ -7,18 +7,21 @@ body, h1, h2, h3, p, ul {
     margin: 0%;
     padding: 0%;
 }
+/* Set base font family for the document */
 body {
     font-family: Arial, sans-serif; 
 }
+/* Style for anchor tags - remove underline and set default color */
 a {
     text-decoration: none;
     color: white; /* Default link color */
 }
 
 /* ============== */
-/* HEADER STYLES */
+/* HEADER STYLE */
 /* ============== */
 
+/* Main header styling with background and spacing */
 header { 
     background: #4166F5; /* Ultramarine background */
     color: white; 
@@ -29,28 +32,32 @@ header {
 /* CATEGORIES NAVIGATION */ 
 /* ==================== */
 
+/* Flex container for category navigation */
 .categories {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center items horizontally */
     gap: 2%; /* Space between items */
     padding: 2%;
     background: #f5f5f5; /* Light background */
 }
+/* Category button styling */
 .categories .button {
     padding: 1.5% 5%;
     background: #ddd; /* Button background */
-    border-radius: 50% / 200%;
+    border-radius: 50% / 200%; /* Oval-shaped corners */
     color: #333;
     border: 0;
 }
+/* Category button hover effects */
 .categories .button:hover {
     background: #4166F5;
     color: white;
     font-weight: bold;
     transition: background-color 0.5s ease; /* Smooth background transition */
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight scale effect */
 }
 
+/* Base button styling */
 .button {
     display: inline-block;
     background: #4166F5;
@@ -62,10 +69,11 @@ header {
 /* VEHICLE CARDS GRID */
 /* ================= */
 
+/* Grid container for vehicle cards */
 .cards {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1%;
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    gap: 1%; /* Space between cards */
     padding: 1%;
     background: #222; /* Dark background */
     justify-content: center; /* Center cards */
@@ -75,19 +83,19 @@ header {
 /* INDIVIDUAL CARD */
 /* ================ */
 
+/* Base styling for each car card */
 .car {
-
     font-size: 50%; /* Base font size */
-    justify-content: space-between; /* Space distribution */
+    justify-content: space-between; /* Space distribution between elements */
 
     /* Layout */
-    width: 30%; /* Reduced from 30% for better fit */
+    width: 30%; /* Card width */
     padding: 1%;
     margin-bottom: 1%;
     
     /* Visual styling */
     background: #444;
-    border-radius: 7.5%;
+    border-radius: 7.5%; /* Rounded corners */
     color: white;
     
     /* Content alignment */
@@ -97,47 +105,49 @@ header {
     text-align: center;
 }
 
-/* Card image */
+/* Card image styling */
 .car img {
     width: 80%; /* Image width */
     max-width: 100%;
     background: #555; /* Image placeholder */
-    margin: 2% auto; /* Auto margins */
+    margin: 2% auto; /* Centered with vertical spacing */
     border-radius: 5%; /* Rounded corners */
     object-fit: contain; /* Maintain proportions */
-    aspect-ratio: 16/9; /* Aspect ratio */
+    aspect-ratio: 16/9; /* Fixed aspect ratio */
     display: block;
     height: auto;
 }
 
-/* Card title */
+/* Card title styling */
 .car h3 {
-    font-size: 200%; /* Larger font */
-    margin: 2% 0; /* Vertical margins */
+    font-size: 200%; /* Larger font size */
+    margin: 2% 0; /* Vertical spacing */
     width: 100%; /* Full width */
 }
 
-/* Card text */
+/* Card description text styling */
 .car p {
-    font-size: 200%; /* Larger font */
-    margin: 2% 0; /* Vertical margins */
+    font-size: 200%; /* Larger font size */
+    margin: 2% 0; /* Vertical spacing */
     width: 100%; /* Full width */
 }
 
+/* Card link styling */
 .car a {
     display: block;
     width: 100%;
     text-decoration: none;
-    color: inherit;
+    color: inherit; /* Inherit text color */
 }
 
-/* Card hover effect*/
+/* Card hover effects */
 .car:hover {
     background: #3b3b3b; /* Darker background on hover */
     transition: background-color 0.5s ease; /* Smooth background transition */
-    color: #4166F5; /* Darker text on hover */
-    transform: scale(1.02);
+    color: #4166F5; /* Accent color on hover */
+    transform: scale(1.02); /* Slight scale effect */
 }
+/* Card image hover effect */
 .car img:hover {
     background: #686868; /* Lighter background on hover */
     transition: background-color 0.5s ease; /* Smooth background transition */
