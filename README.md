@@ -33,7 +33,7 @@
   <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" title="Git" width="48" height="48">
 </p>
 
---
+---
 
 ## 🖼️ **Screenshots**  
 ![Homepage](media/readmeMedia/screenshot1.png)  
